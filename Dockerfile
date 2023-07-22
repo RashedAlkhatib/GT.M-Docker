@@ -15,7 +15,6 @@ RUN tar -xvf /tmp/tmp/gtm_V71001_linux_x8664_pro.tar.gz -C /usr/lib/fis-gtm/V7.1
 WORKDIR /usr/lib/fis-gtm/V7.1-001_x86_64 
 RUN ./configure
 # Set up GT.M profile
-COPY env /home/vista
 WORKDIR /
 # Set aliases
 RUN echo 'export vista_home="/home/vista/EHR"' >> ~/.bashrc
