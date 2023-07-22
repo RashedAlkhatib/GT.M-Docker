@@ -1,4 +1,7 @@
 # GT.M-Docker
+- note 
+  1. Docker Version is `24.0.4`
+    2. this Docker allows you to mount the .dat and routines from you local machine 
 1. sudo docker build -t gtm-image .
 2. sudo docker run -d -p 2022:22 --name gtm-container -v `(path to .dat file in local machien)`:`//home/vista/EHR/g` -v `(path to routine in local machien)`:`//home/vista/EHR/r` gtm-image
 3. change ssh password : sudo docker exec -it gtm-container passwd
