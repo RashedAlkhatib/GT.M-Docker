@@ -8,7 +8,9 @@
 4. change ssh password : sudo docker exec -it gtm-container passwd
 5. restart ssh : sudo docker exec -it gtm-container /etc/init.d/ssh restart
 6. connect to Docker :  ssh root@172.17.0.2
+- incase some errors try this : `ssh-keygen -f "/home/rashed/.ssh/known_hosts" -R "172.17.0.2"`
 7. link DB using these steps (from inside container):
-- GDE
-- change -segment DEFAULT -file=/home/vista/EHR/g/mumps.dat
-- exit
+- `GDE`
+- `change -segment DEFAULT -file=/home/vista/EHR/g/mumps.dat`
+- `exit`
+8. refresh routiens: rundown
