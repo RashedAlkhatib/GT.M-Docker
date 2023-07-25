@@ -3,7 +3,7 @@
   1. Docker Version is `24.0.4`
     2. this Docker allows you to mount the .dat and routines from you local machine
     3. docker installation (Windows) : https://docs.docker.com/desktop/install/windows-install/
-    4. docker installation (linux) : https://docs.docker.com/desktop/install/linux-install/
+    4. docker installation (linux) : https://docs.docker.com/engine/install/ubuntu/
     5. check docker version : sudo docker --version
 1. build the docker : sudo docker build -t gtm-image .
 2. run the docker : sudo docker run -dt -p 2022:22 --name gtm-container -v `(path to .dat file in local machien)`:`//home/vista/EHR/g` -v `(path to routine in local machien)`:`//home/vista/EHR/r` gtm-image
